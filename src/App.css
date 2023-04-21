@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-.App-header {
+.App .App-header {
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -60,6 +60,17 @@ nav {
   gap: 8rem;
 }
 
+nav a {
+  text-decoration: none;
+  color: var(--main-black);
+  border-bottom: 1px solid #292f3600;
+  transition: 2s ease all;
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--main-black);
+}
+
 section {
   position: relative;
   width: 100%;
@@ -78,8 +89,9 @@ section .wave {
 section .wave.wave0 {
   bottom: 0;
   z-index: -1;
+  left: -50%;
   color: var(--main-red);
-  animation: animate 40s linear infinite;
+  animation: lanimate 40s linear infinite;
 }
 
 section .wave.wave1 {
@@ -93,8 +105,9 @@ section .wave.wave1 {
 section .wave.wave2 {
   bottom: 0;
   z-index: -3;
+  left: -50%;
   color: var(--main-yellow);
-  animation: animate 45s linear infinite;
+  animation: lanimate 45s linear infinite;
 }
 
 section .wave.wave3 {
@@ -108,8 +121,9 @@ section .wave.wave3 {
 section .wave.wave4 {
   bottom: 0;
   z-index: -5;
+  left: -50%;
   color: var(--main-blue);
-  animation: animate 25s linear infinite;
+  animation: lanimate 25s linear infinite;
 }
 
 section .wave.wave5 {
@@ -123,8 +137,9 @@ section .wave.wave5 {
 section .wave.wave6 {
   bottom: 0;
   z-index: -7;
+  left: -50%;
   color: var(--main-green);
-  animation: animate 30s linear infinite;
+  animation: lanimate 30s linear infinite;
 }
 
 section .wave.wave7 {
@@ -146,5 +161,19 @@ section .wave.wave7 {
 
   100% {
     left: 0%;
+  }
+}
+
+@keyframes lanimate {
+  0% {
+    left: -50%;
+  }
+
+  50% {
+    left: 0%;
+  }
+
+  100% {
+    left: -50%;
   }
 }
