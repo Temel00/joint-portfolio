@@ -1,34 +1,39 @@
 import React from "react";
-import {HashRouter as Router, Routes, Route, Link} from "react-router-dom";
-import logo from "./logo.svg";
-import {Home} from "./pages/Pages";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
+import {Home} from "./pages/Home";
 import "./App.css";
+import {Work} from "./pages/Work";
+import {AnimatePresence} from "framer-motion";
+import {Hire} from "./pages/Hire";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
-      <Router>
-        <div>
-          <nav></nav>
-          <header className="App-header">
-            <h1>
-              T<span className="maine">e</span>mel
-            </h1>
-            <nav className="links">
-              <Link to="/">Home</Link>
-              <Link to="/foo">About</Link>
-              <Link to="/bar">Hire Me</Link>
-              <Link to="/foo">/</Link>
-            </nav>
-          </header>
+      <div>
+        <header className="App-header">
+          <nav className="links">
+            <Link to="/">Home</Link>
+            <Link to="/work">About</Link>
+            <Link to="/hire">Hire Me</Link>
+            <Link to="/foo">/</Link>
+          </nav>
+        </header>
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            {/* <Route exact path="/foo" component={Foo} /> */}
-            {/* <Route exact path="/bar" component={Bar} /> */}
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} key="home" />
+            <Route path="/work" element={<Work />} key="work" />
+            <Route path="/hire" element={<Hire />} key="hire" />
           </Routes>
-        </div>
-      </Router>
+        </AnimatePresence>
+      </div>
     </div>
   );
 }

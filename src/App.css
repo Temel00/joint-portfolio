@@ -7,12 +7,23 @@
   --main-white: #fbf5f3;
 }
 
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  background: var(--main-black);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.App {
+.App,
+.homePage {
   text-align: center;
 }
 
@@ -28,9 +39,19 @@
   transform: translateY(-50%);
 }
 
-.App-header h1 {
+.homePage {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.homeTitle {
+  position: absolute;
+  z-index: 1;
   color: var(--main-white);
-  grid-area: 1 / 2 / span 3 / span 1;
+  text-shadow: 0 0 2px var(--main-black);
+  /* grid-area: 1 / 2 / span 3 / span 1; */
   align-self: center;
   font-family: "dazzle-unicase", sans-serif;
   font-weight: 200;
@@ -62,13 +83,14 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--main-black);
+  color: var(--main-white);
+  text-shadow: 0 0 2px var(--main-black);
   border-bottom: 1px solid #292f3600;
-  transition: 2s ease all;
+  transition: 0.4s ease all;
 }
 
 nav a:hover {
-  border-bottom: 2px solid var(--main-black);
+  scale: 1.1;
 }
 
 section {
@@ -176,4 +198,81 @@ section .wave.wave7 {
   100% {
     left: -50%;
   }
+}
+
+/* Work styles */
+.workPage {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2em;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-black);
+}
+
+.workTitle {
+  margin-top: 0.5em;
+  font-family: "dazzle-unicase", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4rem;
+  color: var(--main-white);
+}
+
+.workCard {
+  width: 800px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 3em;
+  padding: 1em;
+  font-family: "dazzle-unicase", sans-serif;
+  font-weight: 200;
+  color: var(--main-white);
+  border-radius: 1em;
+  border: 2px solid var(--main-white);
+}
+
+.workCard-btn {
+  text-decoration: none;
+  color: var(--main-green);
+  padding: 1em;
+  border: 2px solid var(--main-green);
+  border-radius: 999em;
+  text-align: center;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.workCard-btn:hover {
+  background: var(--main-green);
+  border: 2px solid var(--main-black);
+  color: var(--main-black);
+  box-shadow: 0 0 15px var(--main-green);
+}
+
+/* Hire styles */
+.hirePage {
+  background: var(--main-blue);
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.headShotCrop {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.headShot {
+  height: 100%;
+  width: auto;
 }
