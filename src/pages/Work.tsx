@@ -29,12 +29,9 @@ export const Work = () => (
       }}
       transition={{duration: 0.8, ease: "easeInOut", delay: 0.6}}
     >
-      <a href="google.com" className="workCard-btn">
-        Go To
-      </a>
       <div>
         <h2 className="nameHead">Domino Scanner</h2>
-        <p>
+        <p className="workDesc">
           This is my concept for a domino scanner done with barcode scanning and
           utilizing the QuaggaJS library tools. This originally started as a
           project for my parents, who were playing a lot of mexican train
@@ -44,6 +41,9 @@ export const Work = () => (
           practical solution.
         </p>
       </div>
+      <a href="google.com" className="workCard-btn">
+        Go To
+      </a>
     </m.div>
     <m.div
       className="workCard"
@@ -57,12 +57,9 @@ export const Work = () => (
       }}
       transition={{duration: 0.8, ease: "easeInOut", delay: 0.8}}
     >
-      <a href="google.com" className="workCard-btn">
-        Go To
-      </a>
       <div>
         <h2 className="nameHead">Domino Scanner</h2>
-        <p>
+        <p className="workDesc">
           This is my concept for a domino scanner done with barcode scanning and
           utilizing the QuaggaJS library tools. This originally started as a
           project for my parents, who were playing a lot of mexican train
@@ -72,6 +69,9 @@ export const Work = () => (
           practical solution.
         </p>
       </div>
+      <a href="google.com" className="workCard-btn">
+        Go To
+      </a>
     </m.div>
     <m.div
       className="workCard"
@@ -85,12 +85,9 @@ export const Work = () => (
       }}
       transition={{duration: 0.8, ease: "easeInOut", delay: 1}}
     >
-      <a href="google.com" className="workCard-btn">
-        Go To
-      </a>
       <div>
         <h2 className="nameHead">Domino Scanner</h2>
-        <p>
+        <p className="workDesc">
           This is my concept for a domino scanner done with barcode scanning and
           utilizing the QuaggaJS library tools. This originally started as a
           project for my parents, who were playing a lot of mexican train
@@ -100,6 +97,9 @@ export const Work = () => (
           practical solution.
         </p>
       </div>
+      <a href="google.com" className="workCard-btn">
+        Go To
+      </a>
     </m.div>
     <m.div
       className="workCard"
@@ -113,12 +113,9 @@ export const Work = () => (
       }}
       transition={{duration: 0.8, ease: "easeInOut", delay: 1.2}}
     >
-      <a href="google.com" className="workCard-btn">
-        Go To
-      </a>
       <div>
         <h2 className="nameHead">Domino Scanner</h2>
-        <p>
+        <p className="workDesc">
           This is my concept for a domino scanner done with barcode scanning and
           utilizing the QuaggaJS library tools. This originally started as a
           project for my parents, who were playing a lot of mexican train
@@ -128,6 +125,9 @@ export const Work = () => (
           practical solution.
         </p>
       </div>
+      <a href="google.com" className="workCard-btn">
+        Go To
+      </a>
     </m.div>
   </div>
 );
