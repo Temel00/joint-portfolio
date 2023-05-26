@@ -1,9 +1,41 @@
 import React from "react";
+import {motion as m} from "framer-motion";
 
 export const Home = () => (
-  <div className="App">
+  <div className="homePage">
+    <m.div
+      className="homeTitleBin"
+      key="title"
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{y: [0, -300, 300], opacity: [1, 1, 0]}}
+      transition={{duration: 1.8, ease: "easeInOut"}}
+    >
+      <h1 className="homeTitle">
+        T<span className="maine">e</span>mel
+      </h1>
+
+      <h2>
+        Softwar<span className="alte">e</span> Engine
+        <span className="maine">e</span>r&ensp;
+      </h2>
+      <h2>
+        Web D<span className="maine">e</span>signer&ensp;
+      </h2>
+      <h2>
+        Tinker<span className="alte">e</span>r&ensp;
+      </h2>
+    </m.div>
+
     <section className="waves">
-      <div className="wave wave0">
+      <m.div
+        className="wave wave0"
+        key="wave0"
+        initial={{y: 1600}}
+        animate={{y: 10}}
+        exit={{y: 1600, transition: {duration: 1, delay: 1.4}}}
+        transition={{duration: 0.8, ease: "easeOut"}}
+      >
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -16,8 +48,15 @@ export const Home = () => (
             />
           </g>
         </svg>
-      </div>
-      <div className="wave wave1">
+      </m.div>
+      <m.div
+        className="wave wave1"
+        key="wave1"
+        initial={{y: 1600}}
+        animate={{y: 0}}
+        exit={{y: 1600, transition: {duration: 1, delay: 1.2}}}
+        transition={{duration: 0.8, ease: "easeOut", delay: 0.2}}
+      >
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -30,8 +69,15 @@ export const Home = () => (
             />
           </g>
         </svg>
-      </div>
-      <div className="wave wave2">
+      </m.div>
+      <m.div
+        className="wave wave2"
+        key="wave2"
+        initial={{y: 1600}}
+        animate={{y: 0}}
+        exit={{y: 1600, transition: {duration: 1, delay: 1}}}
+        transition={{duration: 0.8, ease: "easeOut", delay: 0.4}}
+      >
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -44,8 +90,15 @@ export const Home = () => (
             />
           </g>
         </svg>
-      </div>
-      <div className="wave wave3">
+      </m.div>
+      <m.div
+        className="wave wave3"
+        key="wave3"
+        initial={{y: 1600}}
+        animate={{y: 0}}
+        exit={{y: 1600, transition: {duration: 1, delay: 0.8}}}
+        transition={{duration: 0.8, ease: "easeOut", delay: 0.6}}
+      >
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +111,15 @@ export const Home = () => (
             />
           </g>
         </svg>
-      </div>
-      <div className="wave wave4">
+      </m.div>
+      <m.div
+        className="wave wave4"
+        key="wave4"
+        initial={{y: 1600}}
+        animate={{y: 0}}
+        exit={{y: 1600, transition: {duration: 1, delay: 0.6}}}
+        transition={{duration: 0.8, ease: "easeOut", delay: 0.8}}
+      >
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +132,15 @@ export const Home = () => (
             />
           </g>
         </svg>
-      </div>
-      <div className="wave wave5">
+      </m.div>
+      <m.div
+        className="wave wave5"
+        key="wave5"
+        initial={{y: 1600}}
+        animate={{y: 0}}
+        exit={{y: 1600, transition: {duration: 1, delay: 0.4}}}
+        transition={{duration: 0.8, ease: "easeOut", delay: 1}}
+      >
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -86,8 +153,15 @@ export const Home = () => (
             />
           </g>
         </svg>
-      </div>
-      <div className="wave wave6">
+      </m.div>
+      <m.div
+        className="wave wave6"
+        key="wave6"
+        initial={{y: 1600}}
+        animate={{y: 0}}
+        exit={{y: 1600, transition: {duration: 1, delay: 0.2}}}
+        transition={{duration: 0.8, ease: "easeOut", delay: 1.2}}
+      >
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -100,8 +174,15 @@ export const Home = () => (
             />
           </g>
         </svg>
-      </div>
-      <div className="wave wave7">
+      </m.div>
+      <m.div
+        className="wave wave7"
+        key="wave7"
+        initial={{y: 1600}}
+        animate={{y: 0}}
+        exit={{y: 1600, transition: {duration: 1}}}
+        transition={{duration: 0.8, ease: "easeOut", delay: 1.4}}
+      >
         <svg
           id="Layer_2"
           xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +195,7 @@ export const Home = () => (
             />
           </g>
         </svg>
-      </div>
+      </m.div>
     </section>
   </div>
 );
