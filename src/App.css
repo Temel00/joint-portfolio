@@ -34,23 +34,43 @@ body::-webkit-scrollbar {
   justify-items: center;
 }
 
-.homeTitle {
+.homeTitleBin {
   position: absolute;
   z-index: 1;
+  align-self: center;
   color: var(--main-white);
   text-shadow: 0 0 2px var(--main-black);
-  /* grid-area: 1 / 2 / span 3 / span 1; */
-  align-self: center;
+}
+
+.homeTitle {
   font-family: "dazzle-unicase", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 5rem;
 }
 
+.homeTitleBin h2 {
+  font-family: "dazzle-unicase", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
 .maine {
   display: inline-block;
   transform: rotate(-30deg);
   transition: 0.35s ease all;
+}
+
+.alte {
+  display: inline-block;
+  transform: rotate(30deg);
+  transition: 0.35s ease all;
+}
+
+.alte:hover {
+  transform: rotate(390deg);
 }
 
 .maine:hover {
@@ -265,8 +285,9 @@ section .wave.wave7 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: start;
-  padding-top: 1.5em;
+  padding-block: 3em;
   gap: 1em;
+  padding-bottom: 600px;
 }
 
 .hireTitle {
@@ -275,7 +296,6 @@ section .wave.wave7 {
   color: var(--main-white);
   font-size: 2rem;
 }
-
 .modelCont {
   background: var(--main-red);
   border-radius: 50%;
@@ -302,6 +322,15 @@ model-viewer {
   border: 3px solid var(--main-black);
   z-index: 5;
   align-self: flex-end;
+}
+
+.hireDesc {
+  padding: 2em;
+  max-width: 800px;
+  font-family: "halcom", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 1.25em;
 }
 
 .hireContent {

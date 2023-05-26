@@ -31,6 +31,33 @@ export const Hire = () => {
           <h1>Tyler Emel</h1>
         </div>
       </div>
+      <p className="hireDesc">
+        &emsp;Hello there! I'm Tyler Emel, a passionate software engineer with a
+        diverse professional journey that has enriched my skill set and
+        perspective. Throughout my career, I have delved into various fields,
+        including video production and audio technology, which have contributed
+        to my well-rounded approach to software engineering. <br />
+        &emsp;As the founder and operator of Rival Productions, a successful
+        video production business, I gained invaluable experience in the
+        creative realm. This venture honed my ability to conceptualize, plan,
+        and deliver compelling visual content while collaborating closely with
+        clients to bring their visions to life. The combination of technical
+        expertise and creative problem-solving skills acquired during this
+        venture has proven to be an invaluable asset in my software engineering
+        career.
+        <br />
+        &emsp;Additionally, I had the opportunity to work as an audio technician
+        at a theater, where I developed a keen ear for sound and a meticulous
+        attention to detail. This role exposed me to the intricacies of live
+        audio production, from setting up equipment to ensuring seamless audio
+        experiences for audiences. The experience taught me the importance of
+        precision, adaptability, and teamwork, qualities that have seamlessly
+        translated into my software engineering endeavors.
+        <br />
+        &emsp;If you're looking for a software engineer who can bring a diverse
+        perspective and a well-rounded approach to your team, I'd love to
+        connect. Let's collaborate and create exceptional solutions together!
+      </p>
       <div className="hireContent">
         <h2>Skills</h2>
         <ul className="skillsBin">

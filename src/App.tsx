@@ -20,9 +20,8 @@ function App() {
         <header className="App-header">
           <nav className="links">
             <Link to="/">Home</Link>
-            <Link to="/work">About</Link>
+            <Link to="/work">Work</Link>
             <Link to="/hire">Hire Me</Link>
-            <Link to="/foo">/</Link>
           </nav>
         </header>
 
