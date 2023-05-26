@@ -287,7 +287,7 @@ section .wave.wave7 {
   justify-content: start;
   padding-block: 3em;
   gap: 1em;
-  padding-bottom: 600px;
+  padding-bottom: 1600px;
 }
 
 .hireTitle {
@@ -392,6 +392,24 @@ model-viewer {
   border-radius: 1em;
 }
 
+@media (min-width: 440px) {
+  .hirePage {
+    padding-bottom: 1100px;
+  }
+}
+
+@media (min-width: 600px) {
+  .hirePage {
+    padding-bottom: 900px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hirePage {
+    padding-bottom: 600px;
+  }
+}
+
 @media (min-width: 1250px) {
   .App-header {
     position: absolute;
@@ -435,6 +453,10 @@ model-viewer {
   model-viewer {
     height: 400px;
     width: 400px;
+  }
+
+  .hirePage {
+    padding-bottom: 800px;
   }
 }
 
