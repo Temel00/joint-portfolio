@@ -30,6 +30,33 @@ export const Work = () => (
       transition={{duration: 0.8, ease: "easeInOut", delay: 0.6}}
     >
       <div>
+        <h2 className="nameHead">Color Palette Generator</h2>
+        <p className="workDesc">
+          A simple minimalist color palette generator that allows the user to
+          lock the color panels and copy the hex code directly. Useful for web
+          and graphic design and written on Replit to display source code.
+        </p>
+      </div>
+      <a
+        href="https://replit.com/@Temel00/Color-Palette-Generator"
+        className="workCard-btn"
+      >
+        Go To
+      </a>
+    </m.div>
+    <m.div
+      className="workCard"
+      key="card2"
+      initial={{x: -200, opacity: 0}}
+      animate={{x: 0, opacity: 1}}
+      exit={{
+        x: -200,
+        opacity: 0,
+        transition: {duration: 0.8, ease: "easeInOut", delay: 0.4},
+      }}
+      transition={{duration: 0.8, ease: "easeInOut", delay: 0.8}}
+    >
+      <div>
         <h2 className="nameHead">Domino Scanner</h2>
         <p className="workDesc">
           This is my concept for a domino scanner done with barcode scanning and
@@ -47,33 +74,6 @@ export const Work = () => (
     </m.div>
     <m.div
       className="workCard"
-      key="card2"
-      initial={{x: -200, opacity: 0}}
-      animate={{x: 0, opacity: 1}}
-      exit={{
-        x: -200,
-        opacity: 0,
-        transition: {duration: 0.8, ease: "easeInOut", delay: 0.4},
-      }}
-      transition={{duration: 0.8, ease: "easeInOut", delay: 0.8}}
-    >
-      <div>
-        <h2 className="nameHead">Color Palette Generator</h2>
-        <p className="workDesc">
-          A simple minimalist color palette generator that allows the user to
-          lock the color panels and copy the hex code directly. Useful for web
-          and graphic design and written on Replit to display source code.
-        </p>
-      </div>
-      <a
-        href="https://replit.com/@Temel00/Color-Palette-Generator"
-        className="workCard-btn"
-      >
-        Go To
-      </a>
-    </m.div>
-    <m.div
-      className="workCard"
       key="card3"
       initial={{x: -200, opacity: 0}}
       animate={{x: 0, opacity: 1}}
@@ -85,7 +85,7 @@ export const Work = () => (
       transition={{duration: 0.8, ease: "easeInOut", delay: 1}}
     >
       <div>
-        <h2 className="nameHead">Disc Golf Putting Games</h2>
+        <h2 className="nameHead">Disc Golf Games</h2>
         <p className="workDesc">
           I'm an avid disc golfer and I wanted to improve aspects of my game
           while competing against my brother. We put together some putting games
