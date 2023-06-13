@@ -32,7 +32,7 @@ export const Hire = () => {
         </div>
       </div>
       <p className="hireDesc">
-        &emsp;Hello there! I'm Tyler Emel, a passionate software engineer with a
+        &emsp;Hello there! I'm Tyler Emel, a passionate prospective software engineer with a
         diverse professional journey that has enriched my skill set and
         perspective. Throughout my career, I have delved into various fields,
         including video production and audio technology, which have contributed
@@ -149,8 +149,8 @@ export const Hire = () => {
         </ul>
         <div className="hireLinksBin">
           <a
-            href="../../public/assets/TylerEmelResume.pdf"
-            download="Tyler_Emel_CV"
+            href="https://drive.google.com/file/d/1o-_NrfHYqWwzwQaN6IFcezf_qnH08mcw/view?usp=drive_link"
+            target="_blank"
             className="resumeLink"
           >
             My Resume<i class="fa-solid fa-file"></i>
